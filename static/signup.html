@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Web Gallery</title>
+        <link rel="stylesheet" type="text/css" href="style/main.css"/>
+        <link rel="stylesheet" type="text/css" href="style/form.css"/>
+    </head>
+    <body>
+        <header>
+            <a href="./index.html" class=simple-link>Web Gallery</a>
+        </header>
+        <nav class="nav-menu">
+            <ul class="nav-list simple-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        
+        <div class="error-display-container">
+            <pre id="error-display" class="error-display"></pre>
+        </div>
+
+        <div class="credentials-container">
+            <form class="credentials-form">
+                <span>Sign up by registering a username and password</span>
+                <label for="username-field">Enter a username:</label>
+                <input type="text" id="username-field" required />
+                <label for="password-field">Enter a password:</label>
+                <input type="password" id="password-field" required />
+                <label for="confirm-password-field">Confirm password:</label>
+                <input type="password" id="confirm-password-field" required />
+                <input type="submit" id="signup-submit-btn" value="Sign up" />
+            </form>
+        </div>
+        <script src="js/api.js"></script>
+        <script src="js/signup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+.upload-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: min-content;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 1em;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.credentials-container {
+    display: flex;
+    justify-content: center;
+}
+.credentials-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min-content;
+    gap: 1em;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0 5rem 5rem 5rem;
+    font-size: 14px;
+}
+
+.credentials-form span{
+    text-align: center;
+    font-size: 16px;
+    justify-self: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}

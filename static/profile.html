@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Web Gallery</title>
+        <link rel="stylesheet" type="text/css" href="/style/main.css"/>
+        <link rel="stylesheet" type="text/css" href="/style/post.css"/>
+        <link rel="stylesheet" type="text/css" href="/style/form.css"/>
+    </head>
+    <body>
+        <header>
+            <a href="/" class=simple-link>Web Gallery</a>
+        </header>
+        <nav class="nav-menu">
+            <ul class="nav-list simple-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="visitor-options" id="visitor-options">
+                <a href="./signin.html" class="simple-link hidden" id="signin">Sign in</a>
+                <a href="./signup.html" class="signup-btn hidden" id="signup">Sign up</a>
+            </div>
+        </nav>
+        <div class="profile-container">
+            <ul class="no-list-style panel">
+                <li class="selected-panel"><button class="no-border selected-panel">Overview</button></li>
+                <li><button class="no-border">Account settings</button></li>
+            </ul>
+            <div class="profile-option-container">
+                <div class="overview-container">
+                    <button class="no-border" id="posts-btn"><span class="selected">Posts</span></button>
+                    <button class="no-border" id="comments-btn"><span class="">Comments</span></button>
+                </div>
+                <div class="error-display-container">
+                    <p id="error-display" class="error-display">dsfs</p>
+                </div>
+                <div class="posts" id="user-posts"></div>
+                <div class="posts" id="user-comments"></div>
+            </div>
+            
+
+            </div>
+        </div>
+
+        <script src="/js/api.js"></script>
+        <script src="/js/profile.js"></script>
+    </body>
+</html>

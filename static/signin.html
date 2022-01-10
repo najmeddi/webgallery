@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Web Gallery</title>
+        <link rel="stylesheet" type="text/css" href="style/main.css"/>
+        <link rel="stylesheet" type="text/css" href="style/form.css"/>
+    </head>
+    <body>
+        <header>
+            <a href="./index.html" class=simple-link>Web Gallery</a>
+        </header>
+        <nav class="nav-menu">
+            <ul class="nav-list simple-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        
+        <div class="error-display-container">
+            <p id="error-display" class="error-display"></p>
+        </div>
+
+        <div class="credentials-container">
+            <form class="credentials-form">
+                <span>Sigin in with your login credentials</span>
+                <label for="username-field">Username:</label>
+                <input type="text" id="username-field" required />
+                <label for="password-field">Password:</label>
+                <input type="password" id="password-field" required />
+                <input type="submit" id="signup-submit-btn" value="Sign in" />
+            </form>
+        </div>
+        <script src="js/api.js"></script>
+        <script src="js/signin.js"></script>
+    </body>
+</html>

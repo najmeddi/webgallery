@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Web Gallery</title>
+        <link rel="stylesheet" type="text/css" href="style/main.css"/>
+        <link rel="stylesheet" type="text/css" href="style/post.css"/>
+        <link rel="stylesheet" type="text/css" href="style/form.css"/>
+    </head>
+    <body>
+        <header>
+            <a href="./index.html" class=simple-link>Web Gallery</a>
+        </header>
+        <nav class="nav-menu">
+            <ul class="nav-list simple-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="visitor-options" id="visitor-options">
+                <a href="./signin.html" class="simple-link hidden" id="signin">Sign in</a>
+                <a href="./signup.html" class="signup-btn hidden" id="signup">Sign up</a>
+            </div>
+        </nav>
+        <div class="upload-form-container">
+            <form class="upload-form" id="upload-form" autocomplete="off">
+                <label for="uploadTitle">Title</label>
+                <input type="text" id=upload-title required />
+                <label for="uploadFile">Select an image</label>
+                <input type="file" id=upload-file accept="image/*" required />
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+
+        <div class="error-display-container">
+            <p id="error-display" class="error-display"></p>
+        </div>
+        <div class="posts" id="posts">
+            <!-- Posts and comments under posts go here -->
+            <!-- <div class="post" id="undefined">
+                <div class="post-header">
+                    <span>sdff</span>
+                    <div class="post-options">
+                    <button class="options-button">. . .</button>
+                    <div class="options-content hide">
+                      <a href="#" class="delete-option">Delete</a>
+                    </div>
+                </div>
+                </div>
+                <div class="post-image">
+                    <img src="https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg" alt="sdff">
+                </div>
+                <div class="post-info">
+                    <div class="upvotes-container">
+                        <button class="upvote-button">↑</button>
+                        <span class="upvote-count">0</span>
+                    </div>
+                    <div class="downvotes-container">
+                        <button class="downvotes--button">↓</button>
+                        <span class="downvotes--count">0</span>
+                    </div>
+                    <button class="view-comments-btn">View Comments (2)</button>
+                </div>
+                
+                <div class="post-comments-container"><div class="post-comments">
+                    <div class="post-comment">
+                        <img src="https://st2.depositphotos.com/1009634/7235/v/950/depositphotos_72350117-stock-illustration-no-user-profile-picture-hand.jpg" alt="profile picture 1" width="64" height="64">
+                        <div class="comment-user">
+                            <span class="comment-username">Alice</span>
+                            <span>sdfsdf</span>
+                        </div>
+                    </div>
+                    <div class="post-comment">
+                    </div>
+                </div>
+                    <div class="comment-form-container">
+                        <form class="comment-form">
+                            <label>Enter your comment:</label>
+                            <textarea class="comment-textarea" rows="5" columns="20" maxlength="250" placeholder="Type something here (max 250 characters)..." required=""></textarea>
+                            <input type="submit" value="Comment">
+                        </form>
+                    </div>
+                </div>
+                
+            </div>  -->
+        </div>
+        <script src="js/api.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
